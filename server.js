@@ -17,7 +17,7 @@ let listData = require('./mock/list/list.js');
 
 router.get('/api/getlist/:page/:limit', function (ctx, next) {
 	
-	const page = ctx.params.page;
+	const page = ctx.params.page - 1;
 	const limit = ctx.params.limit;
 	const maxPage = listData.length / limit;
 	
@@ -34,7 +34,7 @@ router.get('/api/getlist/:page/:limit', function (ctx, next) {
 	if ((page*1 + 1) >= maxPage) {
 		res.data.hasMore = false;
 	}
-	res.data.data = listData.slice(page*limit, page*limit + limit);
+	res.data.data = listData.slice(page*limit, (page + 1)*limit);
   	ctx.body = res;
 });
 
