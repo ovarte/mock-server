@@ -6,6 +6,7 @@
 ### 使用到的库
 + `koa`
 + `koa-router`
++ `koa2-cors`
 + `qs`
 
 ### 执行操作
