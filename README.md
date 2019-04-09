@@ -11,7 +11,7 @@
 
 ### 执行操作
 ```
-git clone https://github.com/daijingfeng/mock-server
+git clone https://github.com/ovarte/mock-server.git
 cd mock-server
 npm install
 npm run mock
