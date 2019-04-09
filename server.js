@@ -2,8 +2,11 @@ const Koa = require('koa');
 const Router = require('koa-router');
 const qs = require('qs');
 const assert = require('assert');
+const cors = require('koa2-cors'); //跨域使用
 
 const app = new Koa();
+app.use(cors());
+
 const router = new Router();
 
 /**
