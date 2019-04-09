@@ -25,6 +25,7 @@
   "devDependencies": {
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
-    "qs": "^6.5.1"
+    "qs": "^6.5.1",
+    "koa2-cors": "^2.0.6"
   }
 }
