@@ -4,7 +4,7 @@
   "description": "mock server provide api",
   "main": "index.js",
   "scripts": {
-    "mock": "node ./server.js"
+    "mock": "nodemon ./server.js"
   },
   "repository": {
     "type": "git",

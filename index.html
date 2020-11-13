@@ -13,6 +13,16 @@
     <input type="button" value="test get" id='btn-get'>
     
     <script>
+        $('#btn-get').click(function(){
+           var assertData = {data:'data 测试数据'}
+            $.ajax({
+                url:'/api/getdetail/10',
+                method: 'GET',
+                success:function(res){
+                    console.log(res,'jquery')
+                }
+            })
+        })
         $('#btn-post').click(function(){
            var assertData = {id:123}
             $.ajax({
