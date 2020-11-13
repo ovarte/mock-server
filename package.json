@@ -25,7 +25,13 @@
   "devDependencies": {
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
-    "qs": "^6.5.1",
-    "koa2-cors": "^2.0.6"
+    "koa2-cors": "^2.0.6",
+    "nodemon": "^2.0.6",
+    "qs": "^6.5.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-views": "^6.3.1"
   }
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>server 测试页面</title>
+</head>
+<body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    
+    <input type="button" value="test post" id='btn-post'>
+    <input type="button" value="test get" id='btn-get'>
+    
+    <script>
+        $('#btn-post').click(function(){
+           var assertData = {id:123}
+            $.ajax({
+                url:'api/c',
+                method: 'POST',
+                dateType:'json',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify(assertData),
+                success:function(res){
+                    console.log(res,'jquery')
+                }
+            })
+        })
+        
+      
+    </script>
+</body>
+</html>
